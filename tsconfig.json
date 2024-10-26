@@ -6,12 +6,14 @@
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
       "@shared/*": ["src/components/shared/*"],
+      "@pages/*": ["src/pages/*"],
       "@remote/*": ["src/remote/*"],
       "@models/*": ["src/models/*"],
       "@constants/*": ["src/constants/index"],
       "@mock/*": ["src/mock/*"],
       "@atoms/*": ["src/atoms/*"],
-      "@hooks/*": ["src/hooks/*"]
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react"
