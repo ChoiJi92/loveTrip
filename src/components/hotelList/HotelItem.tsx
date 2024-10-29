@@ -1,4 +1,4 @@
-import { Hotel as HotelType } from '@/models/hotel'
+import { Hotel } from '@/models/hotel'
 import ListRow from '../shared/ListRow'
 import Flex from '../shared/Flex'
 import Text from '../shared/Text'
@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 import formatTime from '@/utils/formatTime'
 import { Link } from 'react-router-dom'
 
-const Hotel = ({ hotel }: { hotel: HotelType }) => {
+const HotelItem = ({ hotel }: { hotel: Hotel }) => {
   const [remainedTime, setRemainedTime] = useState(0)
 
   useEffect(() => {
@@ -97,4 +97,4 @@ const imageStyles = css`
   margin-left: 16px;
 `
 
-export default Hotel
+export default HotelItem

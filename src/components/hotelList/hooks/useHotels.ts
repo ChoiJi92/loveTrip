@@ -1,5 +1,5 @@
 import { Hotel } from '@/models/hotel'
-import getHotels from '@/remote/hotel'
+import { getHotels } from '@/remote/hotel'
 import { useInfiniteQuery } from '@tanstack/react-query'
 import { QueryDocumentSnapshot, QuerySnapshot } from 'firebase/firestore'
 import { useCallback } from 'react'
