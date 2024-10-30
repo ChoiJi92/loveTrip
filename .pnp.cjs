@@ -57,6 +57,7 @@ const RAW_RUNTIME_STATE =
           ["react-infinite-scroll-component", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:6.1.0"],\
           ["react-markdown", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:9.0.1"],\
           ["react-router-dom", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:6.27.0"],\
+          ["recoil", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:0.7.7"],\
           ["swiper", "npm:11.1.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
           ["typescript-eslint", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:8.11.0"],\
@@ -7841,6 +7842,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["hamt_plus", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../.yarn/berry/cache/hamt_plus-npm-1.0.2-67a52ee1df-10c0.zip/node_modules/hamt_plus/",\
+        "packageDependencies": [\
+          ["hamt_plus", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["has-bigints", [\
       ["npm:1.0.2", {\
         "packageLocation": "../../.yarn/berry/cache/has-bigints-npm-1.0.2-52732e614d-10c0.zip/node_modules/has-bigints/",\
@@ -8747,6 +8757,7 @@ const RAW_RUNTIME_STATE =
           ["react-infinite-scroll-component", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:6.1.0"],\
           ["react-markdown", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:9.0.1"],\
           ["react-router-dom", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:6.27.0"],\
+          ["recoil", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:0.7.7"],\
           ["swiper", "npm:11.1.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
           ["typescript-eslint", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:8.11.0"],\
@@ -9964,6 +9975,37 @@ const RAW_RUNTIME_STATE =
           "@types/react-dom",\
           "@types/react",\
           "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["recoil", [\
+      ["npm:0.7.7", {\
+        "packageLocation": "../../.yarn/berry/cache/recoil-npm-0.7.7-4452f58b67-10c0.zip/node_modules/recoil/",\
+        "packageDependencies": [\
+          ["recoil", "npm:0.7.7"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:0.7.7", {\
+        "packageLocation": "./.yarn/__virtual__/recoil-virtual-048b2a642c/3/.yarn/berry/cache/recoil-npm-0.7.7-4452f58b67-10c0.zip/node_modules/recoil/",\
+        "packageDependencies": [\
+          ["recoil", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:0.7.7"],\
+          ["@types/react", "npm:18.3.12"],\
+          ["@types/react-dom", "npm:18.3.1"],\
+          ["@types/react-native", null],\
+          ["hamt_plus", "npm:1.0.2"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:231647c65765a2968f59c133858ae2a1c9a7ae50863fd684665386e47288f8642695c2a25dc47f1dfa58e23c81a44dee55fe4bb3272d8a6dc16e38076caf08e3#npm:18.3.1"],\
+          ["react-native", null]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react-native",\
+          "@types/react",\
+          "react-dom",\
+          "react-native",\
           "react"\
         ],\
         "linkType": "HARD"\

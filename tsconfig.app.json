@@ -32,7 +32,7 @@
       "@models/*": ["src/models/*"],
       "@constants/*": ["src/constants/index"],
       "@mock/*": ["src/mock/*"],
-      "@atoms/*": ["src/atoms/*"],
+      "@atom/*": ["src/store/atom/*"],
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"]
     },
