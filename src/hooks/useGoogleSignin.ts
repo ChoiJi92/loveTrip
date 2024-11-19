@@ -26,7 +26,7 @@ const useGoogleSignin = () => {
           uid: user.uid,
           displayName: user.displayName,
           email: user.email,
-          photoUrl: user.photoURL,
+          photoURL: user.photoURL,
         }
 
         await setDoc(
