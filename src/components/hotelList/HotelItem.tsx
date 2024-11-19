@@ -11,7 +11,19 @@ import { useEffect, useState } from 'react'
 import formatTime from '@/utils/formatTime'
 import { Link } from 'react-router-dom'
 
-const HotelItem = ({ hotel }: { hotel: Hotel }) => {
+const HotelItem = ({
+  hotel,
+  isLike,
+  onLike,
+}: {
+  hotel: Hotel
+  isLike: boolean
+  onLike: ({
+    hotel,
+  }: {
+    hotel: Pick<Hotel, 'id' | 'name' | 'mainImageUrl'>
+  }) => void
+}) => {
   const [remainedTime, setRemainedTime] = useState(0)
 
   useEffect(() => {
@@ -53,6 +65,18 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
       </div>
     )
   }
+
+  const handleLike = (e: React.MouseEvent<HTMLImageElement>) => {
+    e.preventDefault()
+    onLike({
+      hotel: {
+        id: hotel.id,
+        name: hotel.name,
+        mainImageUrl: hotel.mainImageUrl,
+      },
+    })
+  }
+
   return (
     <div>
       <Link to={`/hotel/${hotel.id}`}>
@@ -68,7 +92,21 @@ const HotelItem = ({ hotel }: { hotel: Hotel }) => {
             </Flex>
           }
           right={
-            <Flex direction="column" align="flex-end">
+            <Flex
+              direction="column"
+              align="flex-end"
+              style={{ position: 'relative' }}
+            >
+              <img
+                src={
+                  isLike
+                    ? 'https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-64.png'
+                    : 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-64.png'
+                }
+                alt=""
+                css={iconHeartStyles}
+                onClick={handleLike}
+              />
               <img
                 src={hotel.mainImageUrl}
                 alt={hotel.name}
@@ -95,6 +133,14 @@ const imageStyles = css`
   border-radius: 8px;
   object-fit: cover;
   margin-left: 16px;
+`
+
+const iconHeartStyles = css`
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 30px;
+  height: 30px;
 `
 
 export default HotelItem

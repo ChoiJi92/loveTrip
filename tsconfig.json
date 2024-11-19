@@ -13,7 +13,8 @@
       "@mock/*": ["src/mock/*"],
       "@atom/*": ["src/store/atom/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@contexts/*": ["src/contexts/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react"

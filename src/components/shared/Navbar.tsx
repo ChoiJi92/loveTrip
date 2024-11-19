@@ -5,6 +5,7 @@ import { css } from '@emotion/react'
 import { colors } from '@/styles/colorPalette'
 import { useCallback } from 'react'
 import useUser from '@/hooks/auth/useUser'
+import Spacing from './Spacing'
 
 const Navbar = () => {
   const location = useLocation()
@@ -16,18 +17,29 @@ const Navbar = () => {
   const renderButton = useCallback(() => {
     if (user !== null) {
       return (
-        <Link to={'/my'}>
-          <img
-            src={
-              user.photoURL ??
-              'https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-128.png'
-            }
-            alt="유저의 이미지"
-            width={40}
-            height={40}
-            style={{ borderRadius: '100%' }}
-          />
-        </Link>
+        <Flex align="center">
+          <Link to={'/my'}>
+            <img
+              src={
+                user.photoURL ??
+                'https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-128.png'
+              }
+              alt="유저의 이미지"
+              width={40}
+              height={40}
+              style={{ borderRadius: '100%' }}
+            />
+          </Link>
+          <Spacing size={4} direction="horizontal" />
+          <Link to="/settings">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/settings-outline-64.png"
+              width={40}
+              height={40}
+              alt=""
+            />
+          </Link>
+        </Flex>
       )
     }
     if (showSignButton) {
